@@ -13,6 +13,8 @@
 		34D0280B1B218911008EE535 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D0280A1B218911008EE535 /* Images.xcassets */; };
 		34D0280E1B218911008EE535 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D0280C1B218911008EE535 /* LaunchScreen.xib */; };
 		34D0281A1B218911008EE535 /* ASCViperArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028191B218911008EE535 /* ASCViperArchitectureTests.m */; };
+		34D028281B2189ED008EE535 /* ASCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028271B2189ED008EE535 /* ASCViewController.m */; };
+		34D0282B1B2189F9008EE535 /* ASCInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0282A1B2189F9008EE535 /* ASCInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		34D028131B218911008EE535 /* ASCViperArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCViperArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D028181B218911008EE535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D028191B218911008EE535 /* ASCViperArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCViperArchitectureTests.m; sourceTree = "<group>"; };
+		34D028261B2189ED008EE535 /* ASCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCViewController.h; sourceTree = "<group>"; };
+		34D028271B2189ED008EE535 /* ASCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCViewController.m; sourceTree = "<group>"; };
+		34D028291B2189F9008EE535 /* ASCInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCInteractor.h; sourceTree = "<group>"; };
+		34D0282A1B2189F9008EE535 /* ASCInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 		34D027FC1B218911008EE535 /* ASCViperArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				34D028231B2189D6008EE535 /* Common */,
+				34D028241B2189D6008EE535 /* Model */,
+				34D028251B2189D6008EE535 /* Views */,
 				34D028011B218911008EE535 /* AppDelegate.h */,
 				34D028021B218911008EE535 /* AppDelegate.m */,
 				34D028071B218911008EE535 /* Main.storyboard */,
@@ -112,6 +121,31 @@
 				34D028181B218911008EE535 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34D028231B2189D6008EE535 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				34D028261B2189ED008EE535 /* ASCViewController.h */,
+				34D028271B2189ED008EE535 /* ASCViewController.m */,
+				34D028291B2189F9008EE535 /* ASCInteractor.h */,
+				34D0282A1B2189F9008EE535 /* ASCInteractor.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		34D028241B2189D6008EE535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34D028251B2189D6008EE535 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D0282B1B2189F9008EE535 /* ASCInteractor.m in Sources */,
 				34D028031B218911008EE535 /* AppDelegate.m in Sources */,
 				34D028001B218911008EE535 /* main.m in Sources */,
+				34D028281B2189ED008EE535 /* ASCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
