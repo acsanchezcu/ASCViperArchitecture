@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ASCNewPersonInteractor.h"
+#import "ASCPersonInteractor.h"
 
 
 @class ASCPerson;
@@ -16,6 +16,6 @@
 
 @interface ASCViewControllerFactory : NSObject
 
-- (ASCViewController *)viewControllerWithPerson:(ASCPerson *)person type:(ASCNewPersonInteractorType )type isEditing:(BOOL)isEditing;
+- (ASCViewController *)viewControllerWithPerson:(ASCPerson *)person type:(ASCPersonInteractorType )type isEditing:(BOOL)isEditing;
 
 @end

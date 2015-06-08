@@ -1,5 +1,5 @@
 //
-//  ASCNewPersonNameViewController.h
+//  ASCPersonViewController.h
 //  ASCViperArchitecture
 //
 //  Created by Abel Sánchez Custodio on 7/6/15.
@@ -10,12 +10,12 @@
 
 
 @class ASCPerson;
-@class ASCNewPersonInteractor;
+@class ASCPersonInteractor;
 
 
-@interface ASCNewPersonViewController : ASCViewController
+@interface ASCPersonViewController : ASCViewController
 
-@property (strong, nonatomic) ASCNewPersonInteractor *interactor;
+@property (strong, nonatomic) ASCPersonInteractor *interactor;
 
 @property (strong, nonatomic) ASCPerson *person;
 @property (assign, nonatomic) BOOL isEditing;

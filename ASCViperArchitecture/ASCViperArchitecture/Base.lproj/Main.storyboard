@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="720"/>
         </scene>
-        <!--New Person View Controller-->
+        <!--Person View Controller-->
         <scene sceneID="GQC-Lj-AoN">
             <objects>
-                <viewController storyboardIdentifier="ASCNewPersonViewControllerIdentifier" id="IMZ-em-k4a" customClass="ASCNewPersonViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ASCNewPersonViewControllerIdentifier" id="IMZ-em-k4a" customClass="ASCPersonViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ecg-8m-PZC"/>
                         <viewControllerLayoutGuide type="bottom" id="Jog-GZ-6zW"/>

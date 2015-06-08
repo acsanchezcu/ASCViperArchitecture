@@ -1,17 +1,17 @@
 //
-//  ASCNewPersonNameViewController.m
+//  ASCPersonViewController.m
 //  ASCViperArchitecture
 //
 //  Created by Abel Sánchez Custodio on 7/6/15.
 //  Copyright (c) 2015 acsanchezcu. All rights reserved.
 //
 
-#import "ASCNewPersonViewController.h"
+#import "ASCPersonViewController.h"
 
-#import "ASCNewPersonInteractor.h"
+#import "ASCPersonInteractor.h"
 
 
-@interface ASCNewPersonViewController ()
+@interface ASCPersonViewController ()
 <ASCNewPersonViewControllerInterface, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation ASCNewPersonViewController
+@implementation ASCPersonViewController
 
 #pragma mark - Init
 
@@ -80,11 +80,7 @@
 #pragma mark - Private Methods
 
 - (void)initialize
-{
-//    self.interactor = [[ASCNewPersonInteractor alloc] initWithPerson:self.person];
-//    
-//    [self.interactor setViewController:self type:ASCNewPersonInteractorTypeName person:self.person isEditing:self.isEditing];
-    
+{    
     UITapGestureRecognizer *tapMainView = [[UITapGestureRecognizer alloc]init];
     [tapMainView addTarget:self action:@selector(handleTap:)];
     
@@ -112,21 +108,21 @@
     self.textField.placeholder = placeholder;
 }
 
-- (void)printSaveButton
+- (void)addSaveButton
 {
     UIBarButtonItem *saveButtomItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(userDidTapSaveButton)];
     
     self.navigationItem.rightBarButtonItem = saveButtomItem;
 }
 
-- (void)printNextButton
+- (void)addNextButton
 {
     UIBarButtonItem *nextButtomItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleDone target:self action:@selector(userDidTapNextButton)];
     
     self.navigationItem.rightBarButtonItem = nextButtomItem;
 }
 
-- (void)printCancelButton
+- (void)addCancelButton
 {
     UIBarButtonItem *cancelButtomItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(userDidTapCancelButton)];
     

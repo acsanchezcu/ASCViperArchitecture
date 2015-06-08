@@ -1,5 +1,5 @@
 //
-//  ASCNewPersonInteractor.h
+//  ASCPersonInteractor.h
 //  ASCViperArchitecture
 //
 //  Created by Abel Sánchez Custodio on 5/6/15.
@@ -16,30 +16,25 @@
 @protocol ASCNewPersonViewControllerInterface <NSObject>
 
 - (void)printTextOnTextField:(NSString *)text;
-- (void)printCancelButton;
-- (void)printSaveButton;
-- (void)printNextButton;
+- (void)addCancelButton;
+- (void)addSaveButton;
+- (void)addNextButton;
 - (void)printTitle:(NSString *)title;
 - (void)printPlaceholder:(NSString *)placeholder;
-
-@optional
-
 
 @end
 
 
 typedef enum : NSUInteger {
-    ASCNewPersonInteractorTypeName,
-    ASCNewPersonInteractorTypeFirstName,
-    ASCNewPersonInteractorTypeSecondName,
-} ASCNewPersonInteractorType;
+    ASCPersonInteractorTypeName,
+    ASCPersonInteractorTypeFirstName,
+    ASCPersonInteractorTypeSecondName,
+} ASCPersonInteractorType;
 
 
-@interface ASCNewPersonInteractor : ASCInteractor
+@interface ASCPersonInteractor : ASCInteractor
 
-- (instancetype)initWithPerson:(ASCPerson *)person;
-
-- (void)setViewController:(ASCViewController<ASCNewPersonViewControllerInterface> *)viewController type:(ASCNewPersonInteractorType)type person:(ASCPerson *)person isEditing:(BOOL)isEditing;
+- (instancetype)initWithPerson:(ASCPerson *)person viewController:(ASCViewController<ASCNewPersonViewControllerInterface> *)viewController type:(ASCPersonInteractorType)type isEditing:(BOOL)isEditing;
 
 - (void)viewIsLoad;
 

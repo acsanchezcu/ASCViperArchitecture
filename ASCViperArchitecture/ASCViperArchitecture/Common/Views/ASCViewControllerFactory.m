@@ -8,7 +8,7 @@
 
 #import "ASCViewControllerFactory.h"
 
-#import "ASCNewPersonViewController.h"
+#import "ASCPersonViewController.h"
 
 
 NSString * const ASCNewPersonViewControllerIdentifier = @"ASCNewPersonViewControllerIdentifier";
@@ -16,17 +16,15 @@ NSString * const ASCNewPersonViewControllerIdentifier = @"ASCNewPersonViewContro
 
 @implementation ASCViewControllerFactory
 
-- (ASCViewController *)viewControllerWithPerson:(ASCPerson *)person type:(ASCNewPersonInteractorType)type isEditing:(BOOL)isEditing
+- (ASCViewController *)viewControllerWithPerson:(ASCPerson *)person type:(ASCPersonInteractorType)type isEditing:(BOOL)isEditing
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    ASCNewPersonViewController<ASCNewPersonViewControllerInterface> *viewController = [storyboard instantiateViewControllerWithIdentifier:ASCNewPersonViewControllerIdentifier];
+    ASCPersonViewController<ASCNewPersonViewControllerInterface> *viewController = [storyboard instantiateViewControllerWithIdentifier:ASCNewPersonViewControllerIdentifier];
     
-    ASCNewPersonInteractor *interactor = [[ASCNewPersonInteractor alloc] initWithPerson:person];
+    ASCPersonInteractorType nextType = [self newTypeForType:type];
     
-    ASCNewPersonInteractorType nextType = [self newTypeForType:type];
-    
-    [interactor setViewController:viewController type:nextType person:person isEditing:isEditing];
+    ASCPersonInteractor *interactor = [[ASCPersonInteractor alloc] initWithPerson:person viewController:viewController type:nextType isEditing:isEditing];
     
     viewController.person = person;
     viewController.isEditing = isEditing;
@@ -38,15 +36,15 @@ NSString * const ASCNewPersonViewControllerIdentifier = @"ASCNewPersonViewContro
 
 #pragma mark - Private Methods
 
-- (ASCNewPersonInteractorType)newTypeForType:(ASCNewPersonInteractorType)type
+- (ASCPersonInteractorType)newTypeForType:(ASCPersonInteractorType)type
 {
     switch (type) {
-        case ASCNewPersonInteractorTypeName:
-            return ASCNewPersonInteractorTypeFirstName;
-        case ASCNewPersonInteractorTypeFirstName:
-            return ASCNewPersonInteractorTypeSecondName;
+        case ASCPersonInteractorTypeName:
+            return ASCPersonInteractorTypeFirstName;
+        case ASCPersonInteractorTypeFirstName:
+            return ASCPersonInteractorTypeSecondName;
         default:
-            return ASCNewPersonInteractorTypeSecondName;
+            return ASCPersonInteractorTypeSecondName;
     }
 }
 

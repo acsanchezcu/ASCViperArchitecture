@@ -11,8 +11,8 @@
 #import "ASCPerson.h"
 
 #import "ASCHomeInteractor.h"
-#import "ASCNewPersonViewController.h"
-#import "ASCNewPersonInteractor.h"
+#import "ASCPersonViewController.h"
+#import "ASCPersonInteractor.h"
 
 
 NSString * const CellIdentifier = @"CellIdentifier";
@@ -61,7 +61,7 @@ NSString * const goToNewFlow = @"goToNewFlow";
     {
         UINavigationController *navigationController = segue.destinationViewController;
 
-        ASCNewPersonViewController<ASCNewPersonViewControllerInterface> *viewController = (ASCNewPersonViewController<ASCNewPersonViewControllerInterface> *)navigationController.topViewController;
+        ASCPersonViewController<ASCNewPersonViewControllerInterface> *viewController = (ASCPersonViewController<ASCNewPersonViewControllerInterface> *)navigationController.topViewController;
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
@@ -76,9 +76,7 @@ NSString * const goToNewFlow = @"goToNewFlow";
             viewController.isEditing = YES;
         }
         
-        ASCNewPersonInteractor *interactor = [[ASCNewPersonInteractor alloc] initWithPerson:person];
-        
-        [interactor setViewController:viewController type:ASCNewPersonInteractorTypeName person:person isEditing:viewController.isEditing];
+        ASCPersonInteractor *interactor = [[ASCPersonInteractor alloc] initWithPerson:person viewController:viewController type:ASCPersonInteractorTypeName isEditing:viewController.isEditing];
         
         viewController.interactor = interactor;
     }
