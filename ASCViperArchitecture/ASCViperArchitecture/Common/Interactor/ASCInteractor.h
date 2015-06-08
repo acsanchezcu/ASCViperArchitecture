@@ -16,6 +16,7 @@
 
 - (void)showMessage:(NSString *)message  withTitle:(NSString *)title;
 - (void)navigateTo:(ASCViewController *)viewController animated:(BOOL)animated;
+- (void)dismissViewController:(BOOL)animated;
 
 @end
 

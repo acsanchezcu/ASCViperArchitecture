@@ -22,12 +22,24 @@
                                           message:message
                                           preferredStyle:UIAlertControllerStyleAlert];
     
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:nil];
+    
+    [alertController addAction:okAction];
+    
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)navigateTo:(ASCViewController *)viewController animated:(BOOL)animated
 {
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)dismissViewController:(BOOL)animated
+{
+    [self.navigationController dismissViewControllerAnimated:animated completion:nil];
 }
 
 @end

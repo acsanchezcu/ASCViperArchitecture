@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		348BBBB61B246F5C00A01B41 /* ASCPersonsPersister.m in Sources */ = {isa = PBXBuildFile; fileRef = 348BBBB51B246F5C00A01B41 /* ASCPersonsPersister.m */; };
+		348BBBB91B248CE600A01B41 /* ASCNewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348BBBB81B248CE600A01B41 /* ASCNewPersonViewController.m */; };
+		348BBBBE1B24CD4B00A01B41 /* ASCViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 348BBBBD1B24CD4B00A01B41 /* ASCViewControllerFactory.m */; };
 		34D028001B218911008EE535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D027FF1B218911008EE535 /* main.m */; };
 		34D028031B218911008EE535 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028021B218911008EE535 /* AppDelegate.m */; };
 		34D028091B218911008EE535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D028071B218911008EE535 /* Main.storyboard */; };
 		34D0280B1B218911008EE535 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D0280A1B218911008EE535 /* Images.xcassets */; };
 		34D0280E1B218911008EE535 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D0280C1B218911008EE535 /* LaunchScreen.xib */; };
 		34D0281A1B218911008EE535 /* ASCViperArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028191B218911008EE535 /* ASCViperArchitectureTests.m */; };
-		34D028281B2189ED008EE535 /* ASCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028271B2189ED008EE535 /* ASCViewController.m */; };
-		34D0282B1B2189F9008EE535 /* ASCInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0282A1B2189F9008EE535 /* ASCInteractor.m */; };
+		34D0282E1B218D3F008EE535 /* ASCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0282D1B218D3F008EE535 /* ASCPerson.m */; };
+		34D028381B218DF6008EE535 /* ASCInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028341B218DF6008EE535 /* ASCInteractor.m */; };
+		34D028391B218DF6008EE535 /* ASCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028371B218DF6008EE535 /* ASCViewController.m */; };
+		34D0283C1B218E0E008EE535 /* ASCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0283B1B218E0E008EE535 /* ASCHomeViewController.m */; };
+		34D0283F1B218E26008EE535 /* ASCNewPersonInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0283E1B218E26008EE535 /* ASCNewPersonInteractor.m */; };
+		34D028421B218E30008EE535 /* ASCHomeInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D028411B218E30008EE535 /* ASCHomeInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		348BBBB41B246F5C00A01B41 /* ASCPersonsPersister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCPersonsPersister.h; sourceTree = "<group>"; };
+		348BBBB51B246F5C00A01B41 /* ASCPersonsPersister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCPersonsPersister.m; sourceTree = "<group>"; };
+		348BBBB71B248CE600A01B41 /* ASCNewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCNewPersonViewController.h; sourceTree = "<group>"; };
+		348BBBB81B248CE600A01B41 /* ASCNewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCNewPersonViewController.m; sourceTree = "<group>"; };
+		348BBBBC1B24CD4B00A01B41 /* ASCViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCViewControllerFactory.h; sourceTree = "<group>"; };
+		348BBBBD1B24CD4B00A01B41 /* ASCViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCViewControllerFactory.m; sourceTree = "<group>"; };
 		34D027FA1B218911008EE535 /* ASCViperArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCViperArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D027FE1B218911008EE535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D027FF1B218911008EE535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,10 +52,18 @@
 		34D028131B218911008EE535 /* ASCViperArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCViperArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D028181B218911008EE535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D028191B218911008EE535 /* ASCViperArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCViperArchitectureTests.m; sourceTree = "<group>"; };
-		34D028261B2189ED008EE535 /* ASCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCViewController.h; sourceTree = "<group>"; };
-		34D028271B2189ED008EE535 /* ASCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCViewController.m; sourceTree = "<group>"; };
-		34D028291B2189F9008EE535 /* ASCInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCInteractor.h; sourceTree = "<group>"; };
-		34D0282A1B2189F9008EE535 /* ASCInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCInteractor.m; sourceTree = "<group>"; };
+		34D0282C1B218D3F008EE535 /* ASCPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCPerson.h; sourceTree = "<group>"; };
+		34D0282D1B218D3F008EE535 /* ASCPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCPerson.m; sourceTree = "<group>"; };
+		34D028331B218DF6008EE535 /* ASCInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCInteractor.h; sourceTree = "<group>"; };
+		34D028341B218DF6008EE535 /* ASCInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCInteractor.m; sourceTree = "<group>"; };
+		34D028361B218DF6008EE535 /* ASCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCViewController.h; sourceTree = "<group>"; };
+		34D028371B218DF6008EE535 /* ASCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCViewController.m; sourceTree = "<group>"; };
+		34D0283A1B218E0E008EE535 /* ASCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCHomeViewController.h; sourceTree = "<group>"; };
+		34D0283B1B218E0E008EE535 /* ASCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCHomeViewController.m; sourceTree = "<group>"; };
+		34D0283D1B218E26008EE535 /* ASCNewPersonInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCNewPersonInteractor.h; sourceTree = "<group>"; };
+		34D0283E1B218E26008EE535 /* ASCNewPersonInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCNewPersonInteractor.m; sourceTree = "<group>"; };
+		34D028401B218E30008EE535 /* ASCHomeInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCHomeInteractor.h; sourceTree = "<group>"; };
+		34D028411B218E30008EE535 /* ASCHomeInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCHomeInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +147,9 @@
 		34D028231B2189D6008EE535 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				34D028261B2189ED008EE535 /* ASCViewController.h */,
-				34D028271B2189ED008EE535 /* ASCViewController.m */,
-				34D028291B2189F9008EE535 /* ASCInteractor.h */,
-				34D0282A1B2189F9008EE535 /* ASCInteractor.m */,
+				34D028311B218DF6008EE535 /* Data */,
+				34D028321B218DF6008EE535 /* Interactor */,
+				34D028351B218DF6008EE535 /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -137,6 +157,8 @@
 		34D028241B2189D6008EE535 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34D0282C1B218D3F008EE535 /* ASCPerson.h */,
+				34D0282D1B218D3F008EE535 /* ASCPerson.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +166,59 @@
 		34D028251B2189D6008EE535 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34D0282F1B218DED008EE535 /* Home */,
+				34D028301B218DED008EE535 /* NewPerson */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34D0282F1B218DED008EE535 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				34D0283A1B218E0E008EE535 /* ASCHomeViewController.h */,
+				34D0283B1B218E0E008EE535 /* ASCHomeViewController.m */,
+				34D028401B218E30008EE535 /* ASCHomeInteractor.h */,
+				34D028411B218E30008EE535 /* ASCHomeInteractor.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		34D028301B218DED008EE535 /* NewPerson */ = {
+			isa = PBXGroup;
+			children = (
+				34D0283D1B218E26008EE535 /* ASCNewPersonInteractor.h */,
+				34D0283E1B218E26008EE535 /* ASCNewPersonInteractor.m */,
+				348BBBB71B248CE600A01B41 /* ASCNewPersonViewController.h */,
+				348BBBB81B248CE600A01B41 /* ASCNewPersonViewController.m */,
+			);
+			path = NewPerson;
+			sourceTree = "<group>";
+		};
+		34D028311B218DF6008EE535 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				348BBBB41B246F5C00A01B41 /* ASCPersonsPersister.h */,
+				348BBBB51B246F5C00A01B41 /* ASCPersonsPersister.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		34D028321B218DF6008EE535 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				34D028331B218DF6008EE535 /* ASCInteractor.h */,
+				34D028341B218DF6008EE535 /* ASCInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		34D028351B218DF6008EE535 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34D028361B218DF6008EE535 /* ASCViewController.h */,
+				34D028371B218DF6008EE535 /* ASCViewController.m */,
+				348BBBBC1B24CD4B00A01B41 /* ASCViewControllerFactory.h */,
+				348BBBBD1B24CD4B00A01B41 /* ASCViewControllerFactory.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,10 +323,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D0282B1B2189F9008EE535 /* ASCInteractor.m in Sources */,
+				34D028381B218DF6008EE535 /* ASCInteractor.m in Sources */,
+				34D028421B218E30008EE535 /* ASCHomeInteractor.m in Sources */,
+				34D028391B218DF6008EE535 /* ASCViewController.m in Sources */,
 				34D028031B218911008EE535 /* AppDelegate.m in Sources */,
+				348BBBB91B248CE600A01B41 /* ASCNewPersonViewController.m in Sources */,
 				34D028001B218911008EE535 /* main.m in Sources */,
-				34D028281B2189ED008EE535 /* ASCViewController.m in Sources */,
+				348BBBB61B246F5C00A01B41 /* ASCPersonsPersister.m in Sources */,
+				34D0282E1B218D3F008EE535 /* ASCPerson.m in Sources */,
+				34D0283C1B218E0E008EE535 /* ASCHomeViewController.m in Sources */,
+				34D0283F1B218E26008EE535 /* ASCNewPersonInteractor.m in Sources */,
+				348BBBBE1B24CD4B00A01B41 /* ASCViewControllerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
